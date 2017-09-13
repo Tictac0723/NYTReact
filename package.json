@@ -1,0 +1,44 @@
+{
+  "name": "nytreact",
+  "version": "1.0.0",
+  "description": "NYT React/MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Tictac0723/NYTReact.git"
+  },
+  "author": "Taylor Clark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tictac0723/NYTReact/issues"
+  },
+  "homepage": "https://github.com/Tictac0723/NYTReact#readme",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.1",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.15.4",
+    "method-override": "^2.3.9",
+    "mongoose": "^4.11.11",
+    "morgan": "^1.8.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "request": "^2.81.0",
+    "webpack": "^3.5.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.5.6"
+  }
+}
