@@ -23,7 +23,7 @@ app.use(express.static("public"));
 // -------------------------------------------------
 
 // MongoDB configuration (Change this URL to your own DB)
-mongoose.connect("mongodb://NYTreact");
+mongoose.connect("mongodb://localhost/NYTreact");
 var db = mongoose.connection;
 
 db.on("error", function(err) {
@@ -35,12 +35,10 @@ db.once("open", function() {
 });
 
 // -------------------------------------------------
-
 // Main "/" Route. This will redirect the user to our rendered React application
 
-app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/public/index.html");
-  });
+var router = require('./controllers/controller.js');
+app.use('/', router);
 
   app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
