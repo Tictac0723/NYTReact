@@ -48,7 +48,7 @@ export class Saved extends React.Component {
                           <i> {search.date.substring(0, 10)}</i>
                         </div>
                         <span className="input-group-btn">
-                          <button className="btn btn-danger" type="button" onClick={that.handleDelete} value={search._id}>Remove</button>
+                          <button className="btn btn-danger" type="button" onClick={this.handleDelete} value={search._id}>Remove</button>
                         </span>
                       </div>
                     </li>
