@@ -23,7 +23,12 @@ app.use(express.static("public"));
 // -------------------------------------------------
 
 // MongoDB configuration (Change this URL to your own DB)
-mongoose.connect("mongodb://localhost/NYTreact");
+if(process.env.NODE_ENV =='production') {
+mongoose.connect("mongodb://heroku_grl8bwn6:ojlmlknrtseh7r52lh02pv7rcc@ds135594.mlab.com:35594/heroku_grl8bwn6");
+}
+else{
+  mongoose.connect('mongodb://localhost/NYTreact');
+}
 var db = mongoose.connection;
 
 db.on("error", function(err) {
